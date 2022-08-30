@@ -5,6 +5,24 @@
       "name": "Carrots",
       "amount": "1500",
       "reminder": true
+    },
+    {
+      "name": "Transport",
+      "amount": "2000",
+      "reminder": true,
+      "id": 2
+    },
+    {
+      "name": "Sweet Music",
+      "amount": "5000",
+      "reminder": true,
+      "id": 3
+    },
+    {
+      "name": "Flexing!!",
+      "amount": "3000",
+      "reminder": false,
+      "id": 4
     }
   ]
 }

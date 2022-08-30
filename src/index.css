@@ -45,10 +45,6 @@ body {
 .header h1 {
   color: green;
   font-style: italic;
-  
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
 }
 
 .btn {
@@ -137,4 +133,11 @@ body {
 footer {
   margin-top: 30px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 18px;
+  }
+  
 }
