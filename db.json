@@ -4,6 +4,7 @@
       "id": 1,
       "name": "Carrots",
       "amount": "1500",
-      "reminder": false
+      "reminder": true
     }
   ]
+}

@@ -45,9 +45,9 @@ body {
 .header h1 {
   color: green;
   font-style: italic;
-  font-size: 16px;
-  @media screen and (max-width: 768px) {
-    font-size: 15px;
+  
+  @media (max-width: 768px) {
+    font-size: 16px;
   }
 }
 
