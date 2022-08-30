@@ -24,6 +24,7 @@ body {
 }
 
 .container {
+  width:90%;
   max-width: 500px;
   margin: 30px auto;
   overflow: auto;
@@ -39,6 +40,15 @@ body {
   align-items: center;
   margin-bottom: 20px;
   color: var(--primary-color);
+}
+
+.header h1 {
+  color: green;
+  font-style: italic;
+  font-size: 16px;
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+  }
 }
 
 .btn {

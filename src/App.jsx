@@ -64,8 +64,8 @@ const deleteBudget = async (id) => {
 
 /* Toggle Reminder */
 const toggleReminder = async (id) => {
-const budgetToToggle = await fetchBudget(id)
-const updateBudget = {...budgetToToggle, reminder: !budgetToToggle.reminder}
+  const budgetToToggle = await fetchBudget(id)
+  const updateBudget = {...budgetToToggle, reminder: !budgetToToggle.reminder}
 
 const res = await fetch(`http://localhost:5000/budgets/${id}`, {
   method: 'PUT',
@@ -91,10 +91,11 @@ return (
         onAdd={() => setShowAddBudget(!showAddBudget)}
         showAdd={showAddBudget}
       />
+      <Routes>
+      
       <Route
-        path='/'
-        exact
-        render={(props) => (
+      path='/'
+        element={
           <>
             {showAddBudget && <AddBudget onAdd={addBudget}/>}
             {budgets.length > 0 ? (
@@ -107,9 +108,10 @@ return (
                 'No Budgets To Show'
             )}
           </>
-        )}
+        }
       />
       <Route path='/about' element={<About/>}/>
+      </Routes>
       <Footer/>
     </div>
   </Router>
